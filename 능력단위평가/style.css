@@ -1,0 +1,89 @@
+
+/* 탑바 */
+.top-bar {
+    background-color: #8DB3D3;
+    display: flex;
+    /* 패딩값 임의 지정 */
+    padding: 30px 60px;
+    justify-content: space-between;
+}
+/* 탑바 좌측 로고 */
+.logo-box {
+    /* border: 1px solid red; */
+    display: flex;
+}
+
+.logo-img {
+  width:  240px;
+  height: auto;
+}
+
+/* 탑바 메뉴 리스트 */
+.md-menu01-box {
+    /* border: 1px solid orange;    */
+    display: flex;
+    position: relative;
+}
+
+.mn-li-ul {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.mn-li-li {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.menu02-box {
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 100%; bottom: 0; left: 0; right: 0;
+    /* display: flex;
+    flex-direction: row; */
+}
+.md-menu01-box:hover> .menu02-box {
+    height: 500px;
+    background-color: white;
+}
+
+
+/* 탑바 우측 메뉴 */
+.rt-menu-box {
+    /* border: 1px solid green; */
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+.mn-number { 
+    font-size: 20px;
+    font-weight: 700;
+}
+a > button {
+    font-size: 14px; font-weight: 700;
+    color: #333;
+    border: 1.5px solid #333;
+    border-radius: 20px;
+    padding: 6px 10px;
+    transition: 0.3s;
+}
+a > button:hover {
+    font-size: 14px; font-weight: 700;
+    background-color: #d8cdd8;
+    color: #333;
+    border-radius: 20px;
+    border: 1.5px solid #333;
+    padding: 6px 10px;
+}
+
+.mn-menuli {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.menu-icon {
+    width:  14px;
+  height: auto;
+}

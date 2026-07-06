@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>구현 응용 능력단위 평가</title>
+    <link rel="stylesheet" href="normal.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="nomal.css">
 </head>
 <body>
     <!-- 홈페이지 상단 -->
@@ -15,21 +15,29 @@
              <h1><a href="#" target="_blank" title="logo"><img class="logo-img" src="image/logo_black.svg" alt="home"></a></h1>
             <nav class="logo-box">    
             <!-- 탑바 메뉴 리스트 -->
-                <div class="md-menu01-box"> 
+                <div class="m01-item"> 
                     <ul class="mn-li-ul">
-                        <li class="mn-li-li mn-li-li01"><a href="#" target="_blank" title="시험안내">시험안내</a></li>
+                        <li class="mn-li-li mn-li-li01"><a href="#" target="_blank" title="사업안내">사업안내</a></li>
                         <li class="mn-li-li mn-li-li02"><a href="#" target="_blank" title="단지안내">단지안내</a></li>
                         <li class="mn-li-li mn-li-li03"><a href="#" target="_blank" title="세대안내">세대안내</a></li>                  
                         <li class="mn-li-li mn-li-li04"><a href="#" target="_blank" title="분양안내">분양안내</a></li>
                         <li class="mn-li-li mn-li-li05"><a href="#" target="_blank" title="홍보센터">홍보센터</a></li>
                     </ul>
-                    <div class="menu02-box">
+                    <!-- 2차 메뉴 박스 -->
+                    <!-- <div class="menu02-box"></div> -->
+                    <div class="m02-item">
                         <section class="menu02">
                             <div class="mn02-img-box">
                                 <h1><a href="#" target="_blank" title="백조 이미지"><img src="image/menu02_1.jpg" alt="home"></a></h1>
                             </div>
                             <ul class="mn02-list-box">
-                                <li class="mn02-li-li mn02-li-li01"><a href="#" target="_blank" title="Menswear">Menswear</a></li>
+                                <li class="mn02-li-li mn02-li-li01"><a href="#" target="_blank" title="Menswear">Menswear</a>
+                                    <!-- 3차 메뉴 박스 -->
+                                    <ul class="mn03-nav">
+                                        <li class="m03-item m03-item01"><a href="#">Top</a></li>
+                                        <li class="m03-item m03-item02"><a href="#">Bottom</a></li>
+                                    </ul>
+                                </li>
                                 <li class="mn02-li-li mn02-li-li02"><a href="#" target="_blank" title="Womenswear">Womenswear</a></li>
                                 <li class="mn02-li-li mn02-li-li03"><a href="#" target="_blank" title="sale">sale</a></li>                  
                                 <li class="mn02-li-li mn02-li-li04"><a href="#" target="_blank" title="search">search</a></li>
@@ -40,10 +48,23 @@
             </nav> 
             <!-- 탑바 우측 메뉴  -->
             <div class="rt-menu-box">
+                <!-- 정답 코드 -->
+                   <li class="user-item user-item01"><a href="tel:16444041" target="_blank" title="전화문의">1644.4041</a></li>
+                   <li class="user-item user-item02"><a href="#" target="_blank" title="견본주택 개관 중">견본주택 개관 중</a></li>
+                
+                <!-- 오답 코드 
                 <div class="mn-number">1644.4041</div>
-                <a href="#" target="_blank" title="viewsite"><button>견본주택 개관중</button></a>
-                <div class="mn-menuli">menu</div>
-                <a href="#" target="_blank" title="menuicon"><img class="menu-icon" src="image/more_vert.svg" alt="menuicon"></a>
+                <a href="#" target="_blank" title="viewsite"><button>견본주택 개관중</button></a> -->
+
+                <div class="mn-menu-item">menu</div>
+                
+                <!-- 오답 코드  
+                <a href="#" target="_blank" title="menuicon"><img class="menu-icon" src="image/more_vert.svg" alt="menuicon"></a> -->
+                <svg class="menu-svg" viewBox="0 0 4 18" aria-hidden="true">
+                    <circle cx="2" cy="2" r="1.5"></circle>
+                    <circle cx="2" cy="9" r="1.5"></circle>
+                    <circle cx="2" cy="16" r="1.5"></circle>
+                </svg>
             </div>
         </div>
     </header>

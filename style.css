@@ -19,7 +19,7 @@
 }
 
 /* 탑바 메뉴 리스트 */
-.md-menu01-box {
+.m01-item {
     /* border: 1px solid orange;    */
     display: flex;
     position: relative;
@@ -36,19 +36,37 @@
     font-weight: 600;
 }
 
-.menu02-box {
+
+
+/* --- 2차 메뉴 박스 --- */
+.m02-item {
     height: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
     position: absolute;
     top: 100%; bottom: 0; left: 0; right: 0;
-    /* display: flex;
-    flex-direction: row; */
-}
-.md-menu01-box:hover> .menu02-box {
-    height: 500px;
-    background-color: white;
+    
 }
 
+/* 오답 코드 */
+/* .md-menu01-box:hover> .menu02-box {
+    height: 500px;
+    background-color: white;
+} */
+
+/* 정답 코드 */
+
+.m01-item:hover > a {
+text-decoration: underline;
+}
+
+.m02-item:hover>a {
+    color: blue;
+    text-decoration: underline;
+}
+
+.m02-item:hover > .mn03-nav {
+    display: flex;
+}
 
 /* 탑바 우측 메뉴 */
 .rt-menu-box {
@@ -57,11 +75,11 @@
     gap: 12px;
     align-items: center;
 }
-.mn-number { 
+.user-item01 { 
     font-size: 20px;
     font-weight: 700;
 }
-a > button {
+.user-item02 {
     font-size: 14px; font-weight: 700;
     color: #333;
     border: 1.5px solid #333;
@@ -69,7 +87,7 @@ a > button {
     padding: 6px 10px;
     transition: 0.3s;
 }
-a > button:hover {
+.user-item02:hover {
     font-size: 14px; font-weight: 700;
     background-color: #d8cdd8;
     color: #333;
@@ -78,12 +96,12 @@ a > button:hover {
     padding: 6px 10px;
 }
 
-.mn-menuli {
+.mn-menu-item {
     font-size: 14px;
     font-weight: 500;
 }
 
-.menu-icon {
+.menu-svg {
     width:  14px;
-  height: auto;
+    height: 20px;
 }

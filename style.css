@@ -1,20 +1,20 @@
 
 /* 탑바 */
 .top-bar {
-    background-color: #8DB3D3;
+    background: linear-gradient(90deg, #f7f7f7 0%, #9fc5df 62%, #82add0 100%);
     display: flex;
     /* 패딩값 임의 지정 */
-    padding: 30px 60px;
+    padding: 20px 40px;
     justify-content: space-between;
 }
 /* 탑바 좌측 로고 */
-.logo-box {
+.menu01 {
     /* border: 1px solid red; */
     display: flex;
 }
 
 .logo-img {
-  width:  240px;
+  width:  200px;
   height: auto;
 }
 
